@@ -22,7 +22,7 @@
 
 body {
     height: 200vh;
-    background-image: url("photos/bg.jpg");
+    background-image: url(https://kamlapinski.github.io/coffee-dream/photos/bg.jpg);
     background-repeat: repeat-x;
     background-size: 70vh;
     font-size: 18px;
