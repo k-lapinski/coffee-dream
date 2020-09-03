@@ -382,3 +382,58 @@ a:active {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  /* pc format*/
+  @media (min-width: 730px) {
+    .grid-container {
+        /*border: 1px solid red; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo nav"
+            "logo menuButton"
+            "logo longLine"
+            "logo container"
+            "logo footer";
+    }
+
+    body {
+        height: 100vh;
+        background-image: none;
+
+    }
+    .logo {
+        background-image: url(https://kamlapinski.github.io/coffee-dream/photos/bg.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuHamburger {
+        grid-area: nav;
+        height: 10vh;
+    }
+
+    .menuButtons {
+        grid-area: menuButton;
+        height: 15vh;
+    }
+
+    .LongLine {
+        grid-area: longLine;
+        height: 5vh;
+    }
+
+    .products {
+        grid-area: container;
+        height: 50vh;
+    }
+
+    .footer {
+        grid-area: footer;
+        height: 2vh;
+        font-size: 8px;
+        margin-top: 10%;
+    }
+
+  }
