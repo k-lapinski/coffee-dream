@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+
+.grid-container {
+    /*border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo nav"
+        "menuButton menuButton"
+        "longLine longLine"
+        "container container"
+        "footer footer";
+}
+
+body {
+    height: 200vh;
+    background-image: url("photos/bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 70vh;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+}
+
+/*.item {
+     border: 1px solid black;
+    
+}``````
+*/
+.logo {
+    grid-area: logo;
+    height: 70vh;
+
+}
+
+.logoLeft {
+    color: #ffffff;
+    margin-top: 10%;
+    margin-left: 13%;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: -2;
+}
+
+.menuHamburger {
+    grid-area: nav;
+    height: 70vh;
+
+}
+
+.burgerBtn {
+    margin-top: 15%;
+    margin-left: 65%;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.menuOpen1 {
+    position: absolute;
+    width: 85%;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #50808E;
+    float: left;
+    display: none;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding-left: 15%;
+    padding-top: 10%;
+    z-index: 0;
+    transition: 0.4s;
+}
+
+.menuOpen1 h1 {
+    border-bottom: 2px solid #84B59F;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+.menuOpen1:hover {
+    cursor: pointer;
+}
+
+.menuOpen {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #50808E;
+}
+
+a:active {
+    text-decoration: none;
+    color: #50808E;
+}
+
+.menuLine {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+
+.line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #50808E;
+    transition: 0.4s;
+}
+
+.line2 {
+    transform: rotate(45deg) translate(-1px, -3px);
+    background-color: #50808E;
+    transition: 0.4s;
+}
+
+.menuButtons {
+    grid-area: menuButton;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuButtons2 {
+    color: #84B59F;
+    letter-spacing: 1.5px;
+    float: left;
+    border: 1px solid #84B59F;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+    margin-top: 7vh;
+    margin-left: 5vh;
+    cursor: pointer;
+}
+
+.menuButtons2:first-child {
+    margin-left: 0vh;
+}
+
+
+.greenBall {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #84B59F;
+    float: left;
+    margin-left: -8%;
+    margin-top: 13px;
+    z-index: 2;
+}
+
+.menuButtons2:hover {
+    color: #ffffff;
+    background-color: #84B59F;
+}
+
+.about {
+    grid-area: menuButton;
+    height: 25vh;
+    text-align: center;
+    color: #84B59F;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 7vh;
+}
+
+.green {
+    background-color: #84B59F;
+    color: #ffffff;
+}
+
+.LongLine {
+    grid-area: longLine;
+    height: 10vh;
+}
+
+.line {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #84B59F;
+}
+
+.products {
+    grid-area: container;
+    height: 75vh;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width: 75%;
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products h1 {
+    font-size: 20px;
+    color: #84B59F;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.products h2 {
+    font-size: 13px;
+    color: #50808E;
+    font-weight: 700;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.products h3 {
+    font-size: 13px;
+    color: #50808E;
+    font-weight: 700;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.products h4 {
+    font-size: 12px;
+    color: #84B59F;
+    font-weight: normal;
+    clear: both;
+}
+
+.products h5 {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #50808E;
+    height: 2vh;
+}
+
+.products h5:first-child {
+    padding-top: 30px;
+}
+
+.products h5 i {
+    color: #50808E;
+}
+.aboutUs {
+    grid-area: container;
+    height: 75vh;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 75%;
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: #84B59F;
+}
+
+.aboutUs h2 {
+    font-weight: 700;
+    padding-bottom: 1vh;
+}
+
+.aboutUs h4 {
+    font-size: 12px;
+    color: #50808E;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    padding-bottom: 10vh;
+}
+
+.footer {
+    grid-area: footer;
+    height: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8px;
+    margin-top: 10%;
+    color: #84B59F;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #84B59F;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #50808E;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
