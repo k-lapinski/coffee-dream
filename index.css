@@ -42,7 +42,7 @@ body {
 
 .logoLeft {
     color: #ffffff;
-    margin-top: 10%;
+    margin-top: 16%;
     margin-left: 13%;
     font-size: 1.5rem;
     position: relative;
@@ -56,7 +56,7 @@ body {
 }
 
 .burgerBtn {
-    margin-top: 15%;
+    margin-top: 20%;
     margin-left: 65%;
     cursor: pointer;
     z-index: 1;
@@ -120,7 +120,7 @@ a:active {
 }
 
 .line2 {
-    transform: rotate(45deg) translate(-1px, -3px);
+    transform: rotate(45deg) translate(0px, -3px);
     background-color: #50808E;
     transition: 0.4s;
 }
@@ -383,8 +383,12 @@ a:active {
     to {opacity: 1}
   }
 
+  .menuDesktop {
+      display: none;
+  }
+
   /* pc format*/
-  @media (min-width: 730px) {
+  @media (min-width: 830px) {
     .grid-container {
         /*border: 1px solid red; */
         grid-template-columns: 1fr 1fr;
@@ -401,6 +405,7 @@ a:active {
         background-image: none;
 
     }
+
     .logo {
         background-image: url(https://kamlapinski.github.io/coffee-dream/photos/bg.jpg);
         height: 100vh;
@@ -409,24 +414,109 @@ a:active {
         padding: 0;
     }
 
-    .menuHamburger {
-        grid-area: nav;
+    .logoLeft {
+        z-index: 1;
+    }
+    
+    .nav {
         height: 10vh;
+        margin-left: auto;
+        margin-right:auto;
     }
 
+    .menuHamburger {
+        grid-area: nav;
+        display: none;
+    }
+
+    .greenBall {
+        
+        margin-left: 19%;
+        margin-top: 0px;
+        
+    }
+
+    .menuDesktop {
+        position: relative;
+    width: 95%;
+    font-size: 0.5rem;
+    background-color: #ffffff;
+    color: #50808E;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin-top: 6%;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    }
+
+    .menuDesktop h1 .line {
+        float: right;
+        width: 15px;
+        margin: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .menuDesktop h1 {
+        float: left;
+        text-align: center;
+    }
+
+    .menuDesktop h1:first-child {
+        margin-left: 2%;
+    }
+    
     .menuButtons {
         grid-area: menuButton;
         height: 15vh;
     }
+    .menuButtons2{
+        margin-top: 10%;
+        width: 100px;
+        font-weight: 400;
+        color: #84B59F;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    margin-left: 5vh;
+    cursor: pointer;
+    }
 
     .LongLine {
         grid-area: longLine;
-        height: 5vh;
+        height: 3vh;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+    }
+
+    .line {
+        width: 92%;
     }
 
     .products {
         grid-area: container;
-        height: 50vh;
+        height: 48vh;
+        padding-top: 2vh;
+    }
+
+    .about {
+    height: 10vh;
+    text-align: center;
+    color: #84B59F;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 4vh;
+    }
+
+    .aboutUs {
+        height: 40vh;
     }
 
     .footer {
@@ -436,4 +526,131 @@ a:active {
         margin-top: 10%;
     }
 
+    .logoLeft {margin-top: 5%;
+        margin-left: 7%;
+        font-size: 2rem;}
+
+  }
+
+  @media (min-width: 950px) {
+    .menuDesktop h1:first-child {
+        margin-left: 5%;
+    }
+  }
+
+  @media (min-width: 1024px) { 
+    .menuDesktop {
+        position: relative;
+    width: 95%;
+    font-size: 0.6rem;
+    background-color: #ffffff;
+    color: #50808E;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 6%;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    }
+
+    .menuDesktop h1 .line {
+        float: right;
+        width: 25px;
+        margin: 10px;
+        margin-top: 13px;
+        text-align: center;
+    }
+
+    .menuDesktop h1:first-child {
+        margin-left: 3%;
+    }
+
+        .logoLeft {margin-top: 5%;
+            margin-left: 7%;
+            font-size: 2.5rem;}
+    
+
+  }
+
+  @media (min-width: 1200px) {
+    .menuDesktop {
+        position: relative;
+    width: 95%;
+    font-size: 0.6rem;
+    background-color: #ffffff;
+    color: #50808E;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 6%;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    }
+    .menuDesktop h1:first-child {
+        margin-left: 10%;
+    }
+  }
+
+
+  @media (min-width: 1400px) {
+    .menuDesktop {
+        position: relative;
+    width: 80%;
+    font-size: 0.6rem;
+    background-color: #ffffff;
+    color: #50808E;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 6%;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    }
+
+    .menuDesktop h1 .line {
+        float: right;
+        width: 35px;
+        margin: 15px;
+        margin-top: 13px;
+        text-align: center;
+    }
+
+    .greenBall {
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+
+    .menuDesktop h1:first-child {
+        margin-left: 5%;
+    }
+
+    .logoLeft {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1400px) { 
+    .menuDesktop h1:first-child {
+        margin-left: 5%;
+    }
+  }
+
+  @media (min-width: 1680px) { 
+    .menuDesktop h1:first-child {
+        margin-left: 10%;
+    }
+  }
+
+  @media (min-width: 1920px) { 
+    .menuDesktop h1:first-child {
+        margin-left: 15%;
+    }
   }
